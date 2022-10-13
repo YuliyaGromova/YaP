@@ -1,0 +1,40 @@
+body {
+  color: #2f80ed;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  width: 1280px;  
+}
+
+.image {
+  width: 520px;
+  height: 190px;
+  margin: 110px 380px 10px;
+}
+
+.h1 {
+  width: 420px;
+  min-height: 140px;
+  margin: 0 430px 0;
+  font-size: 100px;
+  font-weight: 200;
+}
+
+.steer {
+  width: 420px;
+  min-height: 140px;
+  margin: 22px 430px 0;
+  color: rgba(47, 128, 237, 0);
+}
+
+.h1:hover + .steer{
+  color:#2f80ed
+}
+
+.footer {
+  width: 420px;
+  margin: 140px 430px 0;
+  padding-bottom: 30px;
+}
+
+
