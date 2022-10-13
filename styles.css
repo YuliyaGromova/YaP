@@ -3,38 +3,46 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   margin: 0;
-  width: 1280px;  
+  width: 1280px; 
 }
 
 .image {
   width: 520px;
   height: 190px;
   margin: 110px 380px 10px;
+  padding:0;
 }
 
 .h1 {
   width: 420px;
-  min-height: 140px;
   margin: 0 430px 0;
-  font-size: 100px;
+  font-size: 120px;
   font-weight: 200;
-}
-
-.steer {
-  width: 420px;
-  min-height: 140px;
-  margin: 22px 430px 0;
-  color: rgba(47, 128, 237, 0);
-}
-
-.h1:hover + .steer{
-  color:#2f80ed
+  padding:0;
 }
 
 .footer {
   width: 420px;
-  margin: 140px 430px 0;
+  margin: 280px 430px 0;
   padding-bottom: 30px;
 }
+
+[data-tooltip] {
+  position: relative;
+}
+[data-tooltip]::after {
+  content: attr(data-tooltip); 
+  position: absolute; 
+  width: 420px; 
+  left: 0; top: 162px;
+  background: white; 
+  pointer-events: none; 
+  opacity: 0; 
+  font-size:16px;
+ } 
+ [data-tooltip]:hover::after {
+  opacity: 1; 
+  
+ }
 
 
